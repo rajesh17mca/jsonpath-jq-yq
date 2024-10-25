@@ -1,7 +1,6 @@
-# jsonpath-jq-yq
-
 #Basics of jsonpath, jq and yq
 **Table of Contents**
+
 
 [TOC]
 ##Table Representation
