@@ -1,8 +1,5 @@
 # Basics of jsonpath, jq and yq
-**Table of Contents**
 
-
-[TOC]
 ## Table Representation
 Category  | Author | Title | Cost
 ------------- | -------------| ------------- | -------------
