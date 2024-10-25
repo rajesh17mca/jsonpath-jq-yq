@@ -1,9 +1,9 @@
-#Basics of jsonpath, jq and yq
+# Basics of jsonpath, jq and yq
 **Table of Contents**
 
 
 [TOC]
-##Table Representation
+## Table Representation
 Category  | Author | Title | Cost
 ------------- | -------------| ------------- | -------------
 Reference  | Nigel Rees | Sayings of the Century | 9.95$
@@ -12,7 +12,7 @@ Fiction | J.R.R. Tolkien | The Lord of the Rings | 10.0$
 Education | R S Agarwal | Arithmetic and Reasoning | 11.99$
 Mythological | Amish Tripati | Secreats of Nagas | 5.99$
 
-##JSON Representation 
+## JSON Representation 
 
 	{
     "store": {
