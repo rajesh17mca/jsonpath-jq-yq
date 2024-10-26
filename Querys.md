@@ -7,16 +7,16 @@ $ - is not mandatory for the Kubectl commands
 \t - Tab space
 ```
 
-```
-Root Node ($): Refers to the root of the JSON data.
-Dot Notation (.key): Accesses a child node by key.
-Bracket Notation (['key']): Alternative way to access child nodes by key.
-Wildcard (*): Selects all elements at the current level.
-Array Index ([index]): Selects a specific index within an array.
-Array Slice ([start:end:step]): Selects a slice of an array (similar to Python slicing).
-Filter (?(@.key < 10)): Allows filtering based on conditions.
-Recursive Descent (..): Searches all levels of the JSON hierarchy for a specific key.
-```
+
+* Root Node ($): Refers to the root of the JSON data.
+* Dot Notation (.key): Accesses a child node by key.
+* Bracket Notation (['key']): Alternative way to access child nodes by key.
+* Wildcard (*): Selects all elements at the current level.
+* Array Index ([index]): Selects a specific index within an array.
+* Array Slice ([start:end:step]): Selects a slice of an array (similar to Python slicing).
+* Filter (?(@.key < 10)): Allows filtering based on conditions.
+* Recursive Descent (..): Searches all levels of the JSON hierarchy for a specific key.
+
 
 #### Get the Image details from all PODs
 ```
