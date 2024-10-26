@@ -46,3 +46,9 @@ We can also use the custom columns option - to avoid the name loops usage in que
 kubectl get pods -o custom-columns=IMAGE:.spec.containers[*].image,NAME:spec.containers[*].name
 kubectl get pods -o custom-columns=NODENAME:.spec.nodeName,IMAGE:.spec.containers[*].image,NAME:spec.containers[*].name
 ```
+
+We can use the sort-by attribute to the kubectl
+```
+kubectl get nodes --sort-by=".metadata.name"
+kubectl get nodes --sort-by=".status.capacity.cpu"
+```
