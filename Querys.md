@@ -1,3 +1,11 @@
+### Notes - IMP
+$ - is not mandatory for the Kubectl commands
+* - Wildcard char which means matching all
+{} - Kubectl commands - we must enclose with parenthesis
+\n - New line
+\t - Tab space
+
+
 #### Get the Image details from all PODs
 ```
 kubectl get pods -o jsonpath="{.items[*].spec.containers[*].image}"
