@@ -14,3 +14,10 @@ kubectl get pods -o jsonpath="{.items[*].spec.containers[*].image}{'\n'}{.items[
 ```
 kubectl get pods -o jsonpath="{range .items[*]}{.spec.containers[*].image}{'\t'}{.spec.containers[*].name}{'\n'}{end}"
 ```
+#### Adhoc Commands
+```
+kubectl get hosts -o jsonpath="{$.items[?(@.spec.hostname=='localhost.com')].spec}"
+kubectl get hosts -o jsonpath="{$.items[?(@.spec.hostname=='localhost.com')].metadata.annotations}"
+kubectl get hosts -o jsonpath="{$.items[?(@.spec.hostname=='localhost.com')].metadata.labels}"
+
+```
