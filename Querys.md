@@ -39,5 +39,10 @@ kubectl get pods -o jsonpath="{range .items[*]}{.spec.containers[*].image}{'\t'}
 kubectl get hosts -o jsonpath="{$.items[?(@.spec.hostname=='localhost.com')].spec}"
 kubectl get hosts -o jsonpath="{$.items[?(@.spec.hostname=='localhost.com')].metadata.annotations}"
 kubectl get hosts -o jsonpath="{$.items[?(@.spec.hostname=='localhost.com')].metadata.labels}"
+```
 
+We can also use the custom columns option - to avoid the name loops usage in query
+```
+kubectl get pods -o custom-columns=IMAGE:.spec.containers[*].image,NAME:spec.containers[*].name
+kubectl get pods -o custom-columns=NODENAME:.spec.nodeName,IMAGE:.spec.containers[*].image,NAME:spec.containers[*].name
 ```
