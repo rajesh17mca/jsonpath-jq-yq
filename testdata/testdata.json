@@ -1,0 +1,44 @@
+{
+    "name": "Rajesh Kamireddy",
+    "qualification": "MCA",
+    "address1": {
+        "Usa":{
+            "Street": "Santa Clara Street",
+            "City": "Santa Clara",
+            "State": "California",
+            "Country": "USA",
+            "ZIP": 95051
+        },
+        "India": {
+            "Street": "Nellore Stret1",
+            "City": "Nellore",
+            "State": "Andhra Pradesh",
+            "Country": "India",
+            "ZIP": 524004
+        }
+    },
+    "Programming": [
+        "Java",
+        "Python",
+        "Shell",
+        "Spring",
+        "Hibernate"
+    ],
+    "Tools":[
+        {
+            "MicroSoft": [
+                "Word",
+                "Excel",
+                "PowerPoint"
+            ]
+        },
+        {   
+            "DevOps": [
+                "Docker",
+                "Kubernetes",
+                "Prometheus",
+                "Grafana"
+            ]
+        }
+    ]
+}

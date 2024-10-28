@@ -1,0 +1,35 @@
+Rajeshs-MacBook-Air:testdata rajeshreddy$ cat simpledata.json 
+{
+    "gender": "Male",
+    "name": {
+        "title": "Mr. ",
+        "first": "Rajesh",
+        "last": "Kamireddy"
+    }
+}Rajeshs-MacBook-Air:testdata rajeshreddy$ jq . simpledata.json 
+{
+  "gender": "Male",
+  "name": {
+    "title": "Mr. ",
+    "first": "Rajesh",
+    "last": "Kamireddy"
+  }
+}
+Rajeshs-MacBook-Air:testdata rajeshreddy$ jq "." simpledata.json 
+{
+  "gender": "Male",
+  "name": {
+    "title": "Mr. ",
+    "first": "Rajesh",
+    "last": "Kamireddy"
+  }
+}
+Rajeshs-MacBook-Air:testdata rajeshreddy$ jq .name simpledata.json 
+{
+  "title": "Mr. ",
+  "first": "Rajesh",
+  "last": "Kamireddy"
+}
+Rajeshs-MacBook-Air:testdata rajeshreddy$ jq .name.last simpledata.json 
+"Kamireddy"
+Rajeshs-MacBook-Air:testdata rajeshreddy$ 
